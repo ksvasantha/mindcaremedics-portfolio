@@ -24,6 +24,7 @@ nav {
     padding: 15px 40px;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .logo a{
@@ -109,6 +110,7 @@ section {
     max-width: 1000px;
     margin: 50px auto;
     padding: 0 20px;
+    scroll-margin-top: 100px;
 }
 
 section h2 {
@@ -171,12 +173,14 @@ a {
     color:#555;
 }
 
+/* ---------- Embedded YouTube Video ---------- */
+
 .video-container{
     position:relative;
     width:100%;
-    max-width:800px;
+    max-width:900px;
     aspect-ratio:16/9;
-    margin-top:20px;
+    margin:25px auto 10px;
 }
 
 .video-container iframe{
@@ -184,4 +188,11 @@ a {
     height:100%;
     border:none;
     border-radius:12px;
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+}
+
+.video-caption{
+    text-align:center;
+    margin-top:10px;
+    font-size:18px;
 }
